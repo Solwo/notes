@@ -30,7 +30,7 @@ andreig@tleilax:~/esp8266 $ git clone --recursive https://github.com/pfalcon/esp
 
 In **crosstool-NG/configure.ac** replace ```|$EGREP '^GNU bash, version (3.[1-9]|4)')``` with ```|$EGREP '^GNU bash, version (3.[1-9]|4|5)')``` (Debian now comes with Bash 5).
 
-In **crosstool-NG/config/companion_libs/expat.in** replace ```default "2.1.0" if EXPAT_V_2_1_0``` with ```default "2.5.0" if EXPAT_V_2_1_0``` (All versions up to 2.5.0 are marked as vulnerable and the tarballs have been removed).
+In **crosstool-NG/config/companion_libs/expat.in** replace ```default "2.1.0" if EXPAT_V_2_1_0``` with ```default "2.6.3" if EXPAT_V_2_1_0``` (All versions up to 2.6.2 are marked as vulnerable and the tarballs have been removed, the 2.6.3 is actual version now).
 
 In **crosstool-NG/scripts/build/companion_libs/121-isl.sh** replace ```http://isl.gforge.inria.fr``` with ```https://libisl.sourceforge.io``` (ISL project has moved, this is a mirror location).
 
